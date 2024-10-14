@@ -10,6 +10,10 @@
             border-collapse: collapse;
             margin: 20px 0;
         }
+        colgroup col:nth-child(3),
+        colgroup col:nth-child(4) {
+            width: 35%; /* Increase the width of the last two columns */
+        }
         th, td {
             border: 1px solid #ddd;
             padding: 8px;
@@ -19,7 +23,7 @@
             background-color: #f4f4f4;
         }
         img {
-            width: 150px; /* Adjust as needed */
+            width: 300px; /* Increased width for larger images */
             height: auto;
         }
         audio {
@@ -31,6 +35,12 @@
 <body>
     <h1>Demo page of MIMII-Gen</h1>
     <table>
+        <colgroup>
+            <col style="width: 15%;">
+            <col style="width: 15%;">
+            <col style="width: 35%;"> <!-- Ground Truth column -->
+            <col style="width: 35%;"> <!-- MIMII-Gen output column -->
+        </colgroup>
         <caption></caption>
         <thead>
             <tr>
